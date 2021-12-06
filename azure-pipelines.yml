@@ -27,7 +27,7 @@ stages:
         version: '$(dotnetSdkVersion)'
 
 
-        - script: npm install --only=dev
+    - script: npm install --only=dev
 
     - script: './node_modules/.bin/node-sass $(wwwrootDir) --output $(wwwrootDir)'
       displayName: 'Compile Sass assets'
